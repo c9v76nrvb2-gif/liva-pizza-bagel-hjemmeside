@@ -1,146 +1,109 @@
 <!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Liva Pizza Bagel - Menukort">
+    <meta name="author" content="Yashwini Bansal">
+    
+    <title>Menu | Liva Pizza Bagel</title>
 
-<html lang="en">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/502c09b2f8.js" crossorigin="anonymous"></script>
 
-    <head>
-        <meta charset = "UTF-8">
-        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-        <meta name="description" content="Retro Café">
-        <meta name="keywords" content="cafe, basic web design, responsive">
-        <meta name="author" content="Yashwini Bansal">
-        
-        <title>Menu | Liva Pizza Bagel</title>
+    <style>
+        /* CSS til din nye bestillingsknap */
+        .btn-order {
+            display: inline-block;
+            background-color: #e44d26; /* Flot rød mad-farve */
+            color: #fff !important;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Smooch&family=The+Nautigal&display=swap" rel="stylesheet">
+        .btn-order:hover {
+            background-color: #c33c1d;
+            text-decoration: none;
+        }
 
-        <link rel = "stylesheet" href="./css/style.css">
-        <link rel="icon" href="./images/logo.svg">
-        <script src="https://kit.fontawesome.com/502c09b2f8.js" crossorigin="anonymous"></script>
-    </head>
+        .btn-order i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
 
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <center><i class="fa-solid fa-mug-hot"></i></center>
-                    <h1>Liva Pizza Bagel</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Forside</a></li>
-                        <li class="current"><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">Om Os</a></li>
-                    </ul>
-                </nav>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Liva Pizza Bagel</h1>
             </div>
-        </header>  
-
-        <div class="clr"></div>
-        
-        <section id="menu-top">
-            <div class="container pg-title">
-                <h1>Frisk Serveret!</h1>
-                <img src="https://liva3650.dk/wp-content/uploads/2022/08/liva-pizza-logo-e1754992070893.png" 
-     width="120" 
-     height="auto" 
-     alt="Liva Pizza & Bagel Logo">
-            </div>
-        </section>
-
-        <div class="clr"></div>
-
-        <div class="container pg-title">
-            <h1>Liva Pizza Bagel Menu</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Forside</a></li>
+                    <li class="current"><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">Om Os</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>  
 
+    <section id="menu-top">
+        <div class="container pg-title" style="text-align: center;">
+            <h1>Frisk Serveret!</h1>
+            <img src="https://liva3650.dk/wp-content/uploads/2022/08/liva-pizza-logo-e1754992070893.png" width="180" height="auto" alt="Liva Pizza & Bagel Logo">
+            <br>
+            <!-- Knappen i toppen -->
+            <a href="https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=b36abfc1-3ca1-4013-beb4-41eb55a598ef" class="btn-order" target="_blank">
+                <i class="fa-solid fa-cart-shopping"></i> BESTIL ONLINE HER
+            </a>
+        </div>
+    </section>
+
+    <div class="container">
         <section id="menu">
             <div class="menu-container">
-                <h2>Menukort</h2>
+                <h2>Vores Menukort</h2>
+                
                 <ul class="menu-list">
-                    <div class="livas-menu-container">
-  
+                    <!-- Pizza -->
+                    <li><span class="name">1. Margherita</span><span class="price">69 kr.</span><small class="desc">Tomatsauce og ost</small></li>
+                    <li><span class="name">7. Vesuvio</span><span class="price">79 kr.</span><small class="desc">Tomatsauce, ost og skinke</small></li>
+                    <li><span class="name">15. Pepperoni</span><span class="price">84 kr.</span><small class="desc">Tomatsauce, ost og pepperoni</small></li>
+                    <li><span class="name">22. Liva Special</span><span class="price">95 kr.</span><small class="desc">Kebab, kylling, champignon, chili og hvidløg</small></li>
+                    
+                    <!-- Bagels -->
+                    <li><span class="name">Kylling & Bacon Bagel</span><span class="price">59 kr.</span><small class="desc">Klassisk bagel med stegt kylling og sprød bacon</small></li>
+                    <li><span class="name">Tunsalat Bagel</span><span class="price">59 kr.</span><small class="desc">Hjemmelavet tunsalat med majs og dild</small></li>
+                    
+                    <!-- Sandwich -->
+                    <li><span class="name">Kyllinge Sandwich</span><span class="price">35 kr.</span><small class="desc">Kyllingestrimler, tomat, agurk, iceberg og dressing</small></li>
+                    
+                    <!-- Drikkevarer -->
+                    <li><span class="name">Sodavand (Dåse)</span><span class="price">25 kr.</span><small class="desc">Coca Cola, Faxe Kondi, Fanta</small></li>
+                </ul>
 
-    <li>
-      <span class="name">1. Margherita</span>
-      <span class="price">69 kr.</span>
-      <small class="desc">Tomatsauce og ost</small>
-    </li>
-    <li>
-      <span class="name">7. Vesuvio</span>
-      <span class="price">79 kr.</span>
-      <small class="desc">Tomatsauce, ost og skinke</small>
-    </li>
-    <li>
-      <span class="name">15. Pepperoni</span>
-      <span class="price">84 kr.</span>
-      <small class="desc">Tomatsauce, ost og pepperoni</small>
-    </li>
-    <li>
-      <span class="name">22. Liva Special</span>
-      <span class="price">95 kr.</span>
-      <small class="desc">Kebab, kylling, champignon, chili og hvidløg</small>
-    </li>
-
-    <li>
-      <span class="name">Kylling & Bacon Bagel</span>
-      <span class="price">59 kr.</span>
-      <small class="desc">Klassisk bagel med stegt kylling og sprød bacon</small>
-    </li>
-    <li>
-      <span class="name">Tunsalat Bagel</span>
-      <span class="price">59 kr.</span>
-      <small class="desc">Hjemmelavet tunsalat med majs og dild</small>
-    </li>
-    <li>
-      <span class="name">Falafel Bagel (Vegansk/Veg.)</span>
-      <span class="price">59 kr.</span>
-      <small class="desc">Med hummus og sprøde falafler</small>
-    </li>
-
-    <li>
-      <span class="name">Klassisk Cheeseburger</span>
-      <span class="price">65 kr.</span>
-      <small class="desc">180g oksebøf, ost, syltede agurker og burgerdressing</small>
-    </li>
-    <li>
-      <span class="name">Chicken Burger</span>
-      <span class="price">60 kr.</span>
-      <small class="desc">Sprød kyllingefilet med mayo og salat</small>
-    </li>
-
-    <li>
-      <span class="name">Kildevand</span>
-      <span class="price">20 kr.</span>
-      <small class="desc">0.5 L</small>
-    </li>
-    <li>
-      <span class="name">Sodavand (Dåse)</span>
-      <span class="price">25 kr.</span>
-      <small class="desc">Coca Cola, Faxe Kondi, Fanta</small>
-    </li>
- 
-
-                    <li>
-                      <span class="name">Kyllinge Sandwich</span>
-                      <span class="price">35. kr.</span>
-                      <small class="desc">Kyllingestrimler , tomater , agurker , iceberg og dressing / Extra topping +5 kr.</small>
-                    </li>
-
-                  </ul>
-            </div>
-
-           
+                <!-- Knappen i bunden -->
+                <center>
+                    <a href="https://www.foodbooking.com/ordering/restaurant/menu?restaurant_uid=b36abfc1-3ca1-4013-beb4-41eb55a598ef" class="btn-order" target="_blank">
+                        <i class="fa-solid fa-utensils"></i> KLIK HER FOR AT STARTE BESTILLING
+                    </a>
+                </center>
             </div>
         </section>
-        
-        <div class="clr"></div>
+    </div>
 
-        <footer>
-            <p>&copy; 2026 Liva Pizza Bagel</p>
-        </footer>
-    </body>
-
+    <footer>
+        <p>&copy; 2026 Liva Pizza Bagel</p>
+    </footer>
+</body>
 </html>
