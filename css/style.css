@@ -245,7 +245,7 @@ header nav{
 
 /* About Us page */
 #about-img{
-    min-height: 480px;
+    min-height: 780px;
     background-size: cover;
     background: url('../images/liva-butik.jpg') no-repeat 0 10px;
     background-position: center center;
