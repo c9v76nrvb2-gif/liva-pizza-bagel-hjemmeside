@@ -254,12 +254,12 @@ header nav{
     text-align: center;
 }
 
-#about-img h1{
+#about-img h6{
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    font: 65px 'The Nautigal', cursive;
+    font: 130px 'The Nautigal', cursive;
 }
 
 /* Sidebar */
