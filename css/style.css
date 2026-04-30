@@ -245,7 +245,7 @@ header nav{
 
 /* About Us page */
 #about-img{
-    min-height: 780px;
+    min-height: 480px;
     background-size: cover;
     background: url('../images/liva-butik.jpg') no-repeat 0 10px;
     background-position: center center;
@@ -257,7 +257,7 @@ header nav{
 #about-img h1{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 100%;
     transform: translate(-50%, -50%);
     font: 65px 'The Nautigal', cursive;
 }
